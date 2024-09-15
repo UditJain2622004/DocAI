@@ -1,0 +1,21 @@
+Identify different types of links and clean them up. 
+    - Absolute links
+    - Relative links
+    - Same page links
+    - JavaScript links
+    - Protocol links
+
+Ignore Same page links and JavaScript links.
+
+Clean the links in the following way:
+    - Add https: to the protocol links
+    - Add the domain to the relative links
+    - Remove the trailing /
+    - Convert the link to lowercase
+    - Remove fragments from the link(eg: #top)
+
+Remove Duplicate links
+
+Identify relevant links and irrelevant links. 
+    - Relevant links are those that contain the domain name
+    - Irrelevant links are those that do not contain the domain name
