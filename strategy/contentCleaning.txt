@@ -1,0 +1,68 @@
+from bs4 import BeautifulSoup
+import re
+
+def clean_text(text):
+    # Remove excessive whitespace and newlines
+    text = re.sub(r'\s+', ' ', text)
+    return text.strip()
+
+def extract_relevant_content(content):
+    soup = BeautifulSoup(content, 'html.parser')
+    
+    # Remove unwanted tags like navigation, scripts, etc.
+    for tag in soup(['nav', 'script', 'footer', 'header']):
+        tag.decompose()
+
+    # Extract relevant sections
+    relevant_content = []
+    
+    # Focus on headers and paragraphs, typically meaningful content in documentation
+    for header in soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'p', 'code']):
+        text = clean_text(header.get_text(separator='\n'))
+        if text:
+            relevant_content.append(text)
+    
+    return '\n'.join(relevant_content)
+
+# Example usage for HTML content (content.txt)
+with open("/mnt/data/content.txt", 'r', encoding='utf-8') as file:
+    raw_content = file.read()
+    cleaned_content = extract_relevant_content(raw_content)
+
+# Example usage for converted HTML2Text content (content_html2text.txt)
+with open("/mnt/data/content_html2text.txt", 'r', encoding='utf-8') as file:
+    raw_html2text_content = file.read()
+    cleaned_html2text_content = extract_relevant_content(raw_html2text_content)
+
+# Now cleaned_content and cleaned_html2text_content contain only relevant text
+
+
+
+
+
+
+
+
+Recommendations for Vector Database Ingestion:
+Segment by Topics:
+
+Split the content based on natural divisions in the documentation, like headings (h1, h2, etc.). For example, each section under "Build a Simple LLM Application with LCEL" can be treated as an independent document for embedding.
+Preprocessing:
+
+Remove excess whitespace, non-informative sections (headers, footers), and duplicate information. Normalize the text (e.g., convert to lowercase if necessary).
+Store in Vector Database:
+
+Once the text is cleaned and segmented, convert each segment into vector embeddings (using models like OpenAI’s text-embedding-ada-002) and store them in your vector database for querying.
+Example Flow:
+Extract relevant content → Clean text → Segment by topics → Embed segments → Store embeddings in vector database.
+
+
+PROCESS ========================================================================================================
+
+Segment by Topics
+Split the content based on natural divisions in the documentation
+Create a heading for each section
+Embed the headings
+For the content under each heading :
+    - Either store the content as metadata 
+    - Store some unique identifier as metadata, and store the content in a separate database or something and link it to the unique identifier

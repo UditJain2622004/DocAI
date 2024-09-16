@@ -40,7 +40,8 @@ Cookbooks
 3rd party tutorials
 YouTube
 arXiv
-v0.2
+v0.3
+v0.3
 v0.2
 v0.1
 🦜️🔗
@@ -220,13 +221,9 @@ Ecosystem
 🦜🛠️ LangSmith
 🦜🕸️ LangGraph
 Versions
-Overview of v0.2
-Release policy
+v0.3
+v0.2
 Pydantic compatibility
-Migrating to v0.2
-Migrating to LangChain v0.2
-astream_events v2
-Changes
 Migrating from v0.0 chains
 How to migrate from v0.0 chains
 Migrating from ConstitutionalChain
@@ -241,6 +238,7 @@ Migrating from MultiPromptChain
 Migrating from RefineDocumentsChain
 Migrating from RetrievalQA
 Migrating from StuffDocumentsChain
+Release policy
 Security
 Tutorials
 Build a Simple LLM Application with LCEL

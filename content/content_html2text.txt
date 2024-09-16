@@ -2,245 +2,6 @@ Skip to main content
 
 Share your thoughts on AI agents. Take the 3-min survey.
 
-![🦜️🔗 LangChain](/v0.2/img/brand/wordmark.png)![🦜️🔗
-LangChain](/v0.2/img/brand/wordmark-dark.png)
-
-Integrations
-
-API reference
-
-  * Latest
-  * Legacy
-
-More
-
-  * People
-  * Contributing
-  * Cookbooks
-  * 3rd party tutorials
-  * YouTube
-  * arXiv
-
-v0.2
-
-  * v0.2
-  * v0.1
-
-🦜️🔗
-
-  * LangSmith
-  * LangSmith Docs
-  * LangChain Hub
-  * JS/TS Docs
-
-💬
-
-Search
-
-  * Introduction
-  * Tutorials
-
-    * Build a Question Answering application over a Graph Database
-    * Tutorials
-    * Build a Simple LLM Application with LCEL
-    * Build a Query Analysis System
-    * Build a Chatbot
-    * Conversational RAG
-    * Build an Extraction Chain
-    * Build an Agent
-    * Tagging
-    * data_generation
-    * Build a Local RAG Application
-    * Build a PDF ingestion and Question/Answering system
-    * Build a Retrieval Augmented Generation (RAG) App
-    * Vector stores and retrievers
-    * Build a Question/Answering system over SQL data
-    * Summarize Text
-  * How-to guides
-
-    * How-to guides
-    * How to use tools in a chain
-    * How to use a vectorstore as a retriever
-    * How to add memory to chatbots
-    * How to use example selectors
-    * How to map values to a graph database
-    * How to add a semantic layer over graph database
-    * How to invoke runnables in parallel
-    * How to stream chat model responses
-    * How to add default invocation args to a Runnable
-    * How to add retrieval to chatbots
-    * How to use few shot examples in chat models
-    * How to do tool/function calling
-    * How to best prompt for Graph-RAG
-    * How to install LangChain packages
-    * How to add examples to the prompt for query analysis
-    * How to use few shot examples
-    * How to run custom functions
-    * How to use output parsers to parse an LLM response into structured format
-    * How to handle cases where no queries are generated
-    * How to route between sub-chains
-    * How to return structured data from a model
-    * How to summarize text through parallelization
-    * How to summarize text through iterative refinement
-    * How to summarize text in a single LLM call
-    * How to use toolkits
-    * How to add ad-hoc tool calling capability to LLMs and Chat Models
-    * Build an Agent with AgentExecutor (Legacy)
-    * How to construct knowledge graphs
-    * How to partially format prompt templates
-    * How to handle multiple queries when doing query analysis
-    * How to use built-in tools and toolkits
-    * How to pass through arguments from one step to the next
-    * How to compose prompts together
-    * How to handle multiple retrievers when doing query analysis
-    * How to add values to a chain's state
-    * How to construct filters for query analysis
-    * How to configure runtime chain internals
-    * How deal with high cardinality categoricals when doing query analysis
-    * Custom Document Loader
-    * How to split by HTML header
-    * How to split by HTML sections
-    * How to use the MultiQueryRetriever
-    * How to add scores to retriever results
-    * Caching
-    * How to use callbacks in async environments
-    * How to attach callbacks to a runnable
-    * How to propagate callbacks constructor
-    * How to dispatch custom callback events
-    * How to pass callbacks in at runtime
-    * How to split by character
-    * How to cache chat model responses
-    * How to handle rate limits
-    * How to init any model in one line
-    * How to track token usage in ChatModels
-    * How to add tools to chatbots
-    * How to split code
-    * How to do retrieval with contextual compression
-    * How to convert Runnables as Tools
-    * How to create custom callback handlers
-    * How to create a custom chat model class
-    * How to create a custom LLM class
-    * Custom Retriever
-    * How to create tools
-    * How to debug your LLM apps
-    * How to load CSVs
-    * How to load documents from a directory
-    * How to load HTML
-    * How to load JSON
-    * How to load Markdown
-    * How to load Microsoft Office files
-    * How to load PDFs
-    * How to create a dynamic (self-constructing) chain
-    * Text embedding models
-    * How to combine results from multiple retrievers
-    * How to select examples from a LangSmith dataset
-    * How to select examples by length
-    * How to select examples by maximal marginal relevance (MMR)
-    * How to select examples by n-gram overlap
-    * How to select examples by similarity
-    * How to use reference examples when doing extraction
-    * How to handle long text when doing extraction
-    * How to use prompting alone (no tool calling) to do extraction
-    * How to add fallbacks to a runnable
-    * How to filter messages
-    * Hybrid Search
-    * How to use the LangChain indexing API
-    * How to inspect runnables
-    * LangChain Expression Language Cheatsheet
-    * How to cache LLM responses
-    * How to track token usage for LLMs
-    * Run models locally
-    * How to get log probabilities
-    * How to reorder retrieved results to mitigate the "lost in the middle" effect
-    * How to split Markdown by Headers
-    * How to merge consecutive messages of the same type
-    * How to add message history
-    * How to migrate from legacy LangChain agents to LangGraph
-    * How to retrieve using multiple vectors per document
-    * How to pass multimodal data directly to models
-    * How to use multimodal prompts
-    * How to create a custom Output Parser
-    * How to use the output-fixing parser
-    * How to parse JSON output
-    * How to retry when a parsing error occurs
-    * How to parse XML output
-    * How to parse YAML output
-    * How to use the Parent Document Retriever
-    * How to use LangChain with different Pydantic versions
-    * How to add chat history
-    * How to get a RAG application to add citations
-    * How to do per-user retrieval
-    * How to get your RAG application to return sources
-    * How to stream results from your RAG application
-    * How to split JSON data
-    * How to recursively split text by characters
-    * Response metadata
-    * How to pass runtime secrets to runnables
-    * How to do "self-querying" retrieval
-    * How to split text based on semantic similarity
-    * How to chain runnables
-    * How to save and load LangChain objects
-    * How to split text by tokens
-    * How to do question answering over CSVs
-    * How to deal with large databases when doing SQL question-answering
-    * How to better prompt when doing SQL question-answering
-    * How to do query validation as part of SQL question-answering
-    * How to stream runnables
-    * How to stream responses from an LLM
-    * How to use a time-weighted vector store retriever
-    * How to return artifacts from a tool
-    * How to use chat models to call tools
-    * How to disable parallel tool calling
-    * How to force models to call a tool
-    * How to access the RunnableConfig from a tool
-    * How to pass tool outputs to chat models
-    * How to pass run time values to tools
-    * How to stream events from a tool
-    * How to stream tool calls
-    * How to convert tools to OpenAI Functions
-    * How to handle tool errors
-    * How to use few-shot prompting with tool calling
-    * How to add a human-in-the-loop for tools
-    * How to bind model-specific tools
-    * How to trim messages
-    * How to create and query vector stores
-  * Conceptual guide
-  * Ecosystem
-
-    * 🦜🛠️ LangSmith
-    * 🦜🕸️ LangGraph
-  * Versions
-
-    * Overview of v0.2
-    * Release policy
-    * Pydantic compatibility
-    * Migrating to v0.2
-
-      * Migrating to LangChain v0.2
-      * astream_events v2
-      * Changes
-    * Migrating from v0.0 chains
-
-      * How to migrate from v0.0 chains
-      * Migrating from ConstitutionalChain
-      * Migrating from ConversationalChain
-      * Migrating from ConversationalRetrievalChain
-      * Migrating from LLMChain
-      * Migrating from LLMMathChain
-      * Migrating from LLMRouterChain
-      * Migrating from MapReduceDocumentsChain
-      * Migrating from MapRerankDocumentsChain
-      * Migrating from MultiPromptChain
-      * Migrating from RefineDocumentsChain
-      * Migrating from RetrievalQA
-      * Migrating from StuffDocumentsChain
-  * Security
-
-  *   * Tutorials
-  * Build a Simple LLM Application with LCEL
-
-On this page
-
 # Build a Simple LLM Application with LCEL
 
 In this quickstart we'll show you how to build a simple LLM application with
@@ -515,7 +276,7 @@ them. To just simply call the model, we can pass in a list of messages to the
     model.invoke(messages)  
     
 
-**API Reference:**HumanMessage | SystemMessage
+API Reference:HumanMessage | SystemMessage
     
     
     AIMessage(content='ciao!', response_metadata={'token_usage': {'completion_tokens': 3, 'prompt_tokens': 20, 'total_tokens': 23}, 'model_name': 'gpt-4', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None}, id='run-fc5d7c88-9615-48ab-a3c7-425232b562c5-0')  
@@ -540,7 +301,7 @@ We first import the simple output parser.
     parser = StrOutputParser()  
     
 
-**API Reference:**StrOutputParser
+API Reference:StrOutputParser
 
 One way to use it is to use it by itself. For example, we could save the
 result of the language model call and then pass it to the parser.
@@ -606,7 +367,7 @@ Let's create a PromptTemplate here. It will take in two user variables:
     from langchain_core.prompts import ChatPromptTemplate  
     
 
-**API Reference:**ChatPromptTemplate
+API Reference:ChatPromptTemplate
 
 First, let's create a string that we will format to be the system message:
 
@@ -751,7 +512,7 @@ contain our logic for serving our application. It consists of three things:
         uvicorn.run(app, host="localhost", port=8000)  
     
 
-**API Reference:**ChatPromptTemplate | StrOutputParser | ChatOpenAI
+API Reference:ChatPromptTemplate | StrOutputParser | ChatOpenAI
 
 And that's it! If we execute this file:
 
@@ -817,23 +578,11 @@ And the LangSmith docs:
 
   * LangSmith
 
-Edit this page
-
-* * *
-
 #### Was this page helpful?
 
   
 
 #### You can also leave detailed feedback on GitHub.
-
-Previous
-
-Tutorials
-
-Next
-
-Build a Query Analysis System
 
   * Setup
     * Jupyter Notebook
@@ -848,22 +597,4 @@ Build a Query Analysis System
     * Playground
     * Client
   * Conclusion
-
-Community
-
-  * Twitter
-
-GitHub
-
-  * Organization
-  * Python
-  * JS/TS
-
-More
-
-  * Homepage
-  * Blog
-  * YouTube
-
-Copyright © 2024 LangChain, Inc.
 
